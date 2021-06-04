@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const keepAlive = require('./Server/')
+const keepAlive = require('./server')
 
 const prefix = '!';
 

@@ -12,4 +12,4 @@ function keepAlive() {
     })
 }
 
-module.expots = keepAlive
+module.exports = keepAlive
