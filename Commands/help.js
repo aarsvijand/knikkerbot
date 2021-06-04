@@ -1,7 +1,11 @@
-if (!args.length) {
-	data.push('Lijst met commando\'s:');
-	data.push(commands.map(command => command.name).join(', '));
-	}
+// if (!args.length) {
+// 	data.push('Lijst met commando\'s:');
+// 	data.push(commands.map(command => command.name).join(', '));
+// 	}
+
+
+
+
 
 // const { Channel } = require("discord.js")
 
