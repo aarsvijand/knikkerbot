@@ -1,33 +1,7 @@
-const Discord = require('discord.js');
-
-const fs = require("fs")
-
-module.exports = {
-    name: 'help',
-
-    async run(client, message, args, con) {
-        fs.readdir("./Commands/", (err, files) => {
-            if(err) console.error(err);
-
-            let jsfiles = files.filter(f => f.split(".").pop() === "js");
-            if(jsfiles.length <= 0) {
-                console.log("No commands to load!");
-                return;
-            }
-                
-            var namelist = "";
-            var desclist = "";
-            var usage = "";
-            
-            let result = jsfiles.forEach((f, i) => {
-                let props = require(`./${f}`);
-                namelist = props.name;
-                message.author.send(`**${namelist}** \n${desclist} \n`);
-            });
-         
-        });
-    },
-};
+if (!args.length) {
+	data.push('Lijst met commando\'s:');
+	data.push(commands.map(command => command.name).join(', '));
+	}
 
 // const { Channel } = require("discord.js")
 
