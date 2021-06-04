@@ -1,6 +1,3 @@
-const Discord = require('discord.js'); 
-const fs = require("fs");
-
 module.exports = {
     name: 'help',
     description: 'Beschikbare commandos',
@@ -28,8 +25,8 @@ module.exports = {
 
      
         });
-    }
-}
+    },
+};
 
 // const { Channel } = require("discord.js")
 
