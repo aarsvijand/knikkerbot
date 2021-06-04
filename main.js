@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+const keepAlive = require("./server")
+
 const prefix = '!';
 
 const fs = require('fs');
@@ -36,5 +38,5 @@ client.on('message', message => {
 
 });
 
-
+keepAlive()
 client.login(process.env.token);
