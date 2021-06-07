@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'knuffel ${user.username}',
+    name: "knuffel <@''>",
     execute(message, args){
-        message.channel.send('Je hebt nu een gratis knuffel aan ${user.username} gegeven');
+        message.channel.send("Je hebt nu een gratis knuffel aan <@''> gegeven");
     },
 };
