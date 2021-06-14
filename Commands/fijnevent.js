@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'fijne vent',
+    name: 'fijnevent',
     execute(message, args){
         message.channel.send('Moet jij zeggen');
     },
