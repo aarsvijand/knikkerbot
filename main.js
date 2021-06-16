@@ -2,6 +2,8 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+require("dotenv").config();
+
 const keepAlive = require('./server')
 
 const prefix = '!';
@@ -15,7 +17,6 @@ for(const file of commandFiles){
     const command = require(`./Commands/${file}`);
     client.commands.set(command.name, command);
 }
-
 
 client.once('ready', () => {
     console.log('Knikkerbot is online!');
@@ -35,8 +36,8 @@ client.on('message', message => {
         message.reply('Dat kan helemaal niet11!!')
     }
        
-
 });
 
 keepAlive()
-client.login(process.env.token);
+
+client.login(process.env.BOT_TOKEN);
