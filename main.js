@@ -39,4 +39,5 @@ client.on('message', message => {
 });
 
 keepAlive()
+
 client.login(process.env.BOT_TOKEN);
